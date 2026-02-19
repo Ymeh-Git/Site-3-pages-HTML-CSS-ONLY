@@ -3,6 +3,11 @@
 Small project, 3 pages, using only HTML & CSS
 A project to raise awaireness about forest and activities around it, to appreciate our environment and nature's beauty. 
 
+Sorry for my Frenglish
+
+We will go though this project step by step 🐌
+
+**If you are eager to see the result, open it in your browser**
 ## Tree structure :
 
 ```
@@ -42,7 +47,7 @@ A project to raise awaireness about forest and activities around it, to apprecia
 
 ### Desktop
 
-#### Accueil
+#### Homepage
 ![Desktop-accueil](./img/preparation/Accueil-desktop.jpg)
 #### Activite
 ![Desktop-activite](./img/preparation/Activite-desktop.jpg)
@@ -51,11 +56,11 @@ A project to raise awaireness about forest and activities around it, to apprecia
 
 ### Mobile
 
-#### Accueil
+#### Homepage
 ![Mobile-accueil](./img/preparation/Accueil-mobile.jpg)
-#### Activite
+#### Activity
 ![Mobile-activite](./img/preparation/Activite-mobile.jpg)
-#### Ecosysteme
+#### Ecosystem
 ![Mobile-ecosystem](./img/preparation/Ecosysteme-mobile.jpg)
 
 <hr>
@@ -85,7 +90,47 @@ A project to raise awaireness about forest and activities around it, to apprecia
 ### Footer
 
 ```
-
+<footer class="flex-row-space-between">
+    <section class="contact flex-row-space-between">
+        <h2>Contact</h2>
+        <div class="phone">
+            <img 
+            src="./img/logo/telephone-ADI_ICONS-flaticon.png" 
+            alt="Logo Téléphone - Logo de ADI_ICONS - Flaticon.com" 
+            class="footer-img">
+            <a href="phoneto:0102030405" class="btn btn-text-white">+33 1 02 03 04 05</a>
+        </div>
+        <div class="email flex-row-space-between">
+            <img 
+            src="./img/logo/email-freepik-flaticon.png" 
+            alt="Logo Mail - Logo de Freepik - Flaticon.com" 
+            class="footer-img">
+            <a href="mailto:faux.mail@gmail.com" class="btn btn-text-white">faux.mail@gmail.com</a>
+        </div>
+        <a href="#modal-mentions-légale" class="btn">Mentions légales</a>
+    </section>
+    <img 
+    src="./img/logo/mickeylit-ai-generated-pixabay.png" 
+    alt="Logo Eco'Rando arbre générée par IA - Logo de Mickeylit - Pixabay.com" 
+    class="logo footer-logo">
+    <section class="reseau">
+        <h2>Réseaux sociaux</h2>
+        <div class="facebook flex-row-space-between">
+            <img 
+            src="./img/logo/freepik-facebook-flaticon.png" 
+            alt="Logo Facebook - Logo de Freepik - Flaticon.com" 
+            class="footer-img">
+            <a href="https://www.facebook.com" class="btn btn-text-white">Eco'Rando</a>
+        </div>
+        <div class="instagram flex-row-space-between">
+            <img 
+            src="./img/logo/Laisa-islam-instagram-flaticon.png" 
+            alt="Logo Instagram - Logo de Laisa Islam - Flaticon.com" 
+            class="footer-img">
+            <a href="https://www.instagram.com" class="btn btn-text-white">@Eco_Rando</a>
+        </div>
+    </section>
+</footer>
 ```
 
 <hr>
@@ -236,14 +281,16 @@ After that all will be in \<main>
 </section>
 ```
 
-
 <hr>
+
+##
 
 ## Special thanks to :
 ### logos : 
 -   [Flaticon](https://www.flaticon.com/fr/) :
     - Freepik,
     - Laisa Islam,
+    - ADI_ICONS,
 
 - [Pixabay](https://pixabay.com/fr/) : 
     - Mickeylit,
