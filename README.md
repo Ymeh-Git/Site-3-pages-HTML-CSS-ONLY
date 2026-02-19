@@ -113,8 +113,81 @@ After that all will be in \<main>
 ### Ecosystem section
 
 ```
-
+<section class="ecosysteme">
+    <h2 class="section-title">Notre écosystème</h2>
+    <!-- PRESENTATION ARTICLE -->
+    <article class="flex-row">
+        <img 
+        src="./img/logo/mickeylit-ai-generated-pixabay.png"
+        alt="Logo Eco'Rando arbre générée par IA - Logo de Mickeylit - Pixabay.com" 
+        class="logo ecosysteme-img">
+        <div class="ecosysteme-text">
+            <h3>Eco'Rando</h3>
+            <p>
+                Fondée en 2026, Eco'Rando est un rassemblement de passionnés de la nature, voués à partager et sensibiliser le plus grand nombre, en commençant avec des programmes pour les plus jeunes jusqu'aux plus anciens cherchant de nouveaux horizons. Pour ceux en capacités des activités sportives en plein air dont randonnées abordées sous un autre angle.
+            </p>
+            <div class="flex-end">
+                <a href="#modal-eco-rando" class="btn btn-full">En savoir plus</a>
+            </div>
+        </div>
+        <div class="emptiness-equal-to-ecosysteme-img"></div>
+    </article>
+    <!-- REVERSE ARTICLE -->
+    <article class="flex-row-reverse">
+        <img 
+        src=""
+        alt="" 
+        class="ecosysteme-img">
+        <div class="ecosysteme-text">
+            <h3>Titre</h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis id unde ipsa? Non sit repellendus, facere excepturi ad corrupti tenetur voluptatum at, quo, molestiae deleniti tempora reprehenderit praesentium? Id.
+            </p>
+            <div class="flex-end">
+                <a href="#modal-eco-rando" class="btn btn-full">En savoir plus</a>
+            </div>
+        </div>
+        <div class="emptiness-equal-to-ecosysteme-img"></div>
+    </article>
+    <!-- NORMAL ARTICLE -->
+    <article class="flex-row">
+        <img 
+        src=""
+        alt="" 
+        class="ecosysteme-img">
+        <div class="ecosysteme-text">
+            <h3>Titre</h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis id unde ipsa? Non sit repellendus, facere excepturi ad corrupti tenetur voluptatum at, quo, molestiae deleniti tempora reprehenderit praesentium? Id.
+            </p>
+            <div class="flex-end">
+                <a href="#modal-eco-rando" class="btn btn-full">En savoir plus</a>
+            </div>
+        </div>
+        <div class="emptiness-equal-to-ecosysteme-img"></div>
+    </article>
+    <!-- REVERSE ARTICLE -->
+    <article class="flex-row-reverse">
+        <img 
+        src=""
+        alt="" 
+        class="ecosysteme-img">
+        <div class="ecosysteme-text">
+            <h3>Titre</h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis id unde ipsa? Non sit repellendus, facere excepturi ad corrupti tenetur voluptatum at, quo, molestiae deleniti tempora reprehenderit praesentium? Id.
+            </p>
+            <div class="flex-end">
+                <a href="#modal-eco-rando" class="btn btn-full">En savoir plus</a>
+            </div>
+        </div>
+        <div class="emptiness-equal-to-ecosysteme-img"></div>
+    </article>
+</section>
 ```
+
+### Activity section
+
 
 <hr>
 
