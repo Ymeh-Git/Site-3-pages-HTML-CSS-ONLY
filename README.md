@@ -7,7 +7,7 @@ Sorry for my Frenglish
 
 We will go though this project step by step 🐌
 
-**If you are eager to see the result, open it in your browser**
+**If you are eager to see the result, clone it or download .zip, extract it and open it in your browser**
 ## Tree structure :
 
 ```
