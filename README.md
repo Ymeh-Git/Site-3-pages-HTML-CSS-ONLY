@@ -188,14 +188,68 @@ After that all will be in \<main>
 
 ### Activity section
 
+```
+<section class="activite flex-column-center-center">
+    <h2 class="section-title">Activités</h2>
+    <nav class="cards-container">
+        <!-- CARD RANDO -->
+        <a href="./pages/activite.html#rando" class="card">
+            <div class="card-content">
+                <img 
+                src="./img/randonnee-yevhenii-dubrovskyi--unsplash.jpg" 
+                alt="Trois personnes sur un chemin pentu en randonnée dans une forêt - Image de Yevhenii Dubrovskyi - Unsplash.com" 
+                class="card-background-img">
+                <h3 class="card-title">Randonnées</h3>
+            </div>
+        </a>
+        <!-- CARD KAYAK -->
+        <a href="./pages/activite.html#kayak" class="card">
+            <div class="card-content">
+                <img 
+                src="./img/kayak-philippe-oursel-Oer7jCMqZtk-unsplash.jpg" 
+                alt="Deux personnes faisant du kayak sur une rivière au centre d'une forêt - Image de Philippe Oursel - Unsplash.com" 
+                class="card-background-img">
+                <h3 class="card-title">Kayak</h3>
+            </div>
+        </a>
+        <!-- CARD KAYAK -->
+        <a href="./pages/activite.html#kayak" class="card">
+            <div class="card-content">
+                <img 
+                src="./img/canyoning-josh-fotheringham-GwRlyykKg-M-unsplash.jpg" 
+                alt="Deux personnes marchant dans une rivière en équipement de canyoning - Image de Josh Fotheringham - Unsplash.com" 
+                class="card-background-img">
+                <h3 class="card-title">Canyoning</h3>
+            </div>
+        </a>
+        <!-- CARD CYCLING -->
+        <a href="./pages/activite.html#velo" class="card">
+            <div class="card-content">
+                <img 
+                src="./img/velo-jorgen-hendriksen-xu2pJBFTW-M-unsplash.jpg" 
+                alt="Une personne faisant du vélo au sein d'une forêt d'automne - Image de Jorgen Hendriksen - Unsplash.com" 
+                class="card-background-img">
+                <h3 class="card-title">Vélo</h3>
+            </div>
+        </a>
+    </div>
+</section>
+```
+
 
 <hr>
 
 ## Special thanks to :
 ### logos : 
--   Flaticon :
-    - Freepik
-    - Laisa Islam
+-   [Flaticon](https://www.flaticon.com/fr/) :
+    - Freepik,
+    - Laisa Islam,
 
-- Pixabay : 
-    - Mickeylit
+- [Pixabay](https://pixabay.com/fr/) : 
+    - Mickeylit,
+
+- [Unsplash](https://unsplash.com/fr) :
+    - Josh Fotheringham,
+    - Philippe Oursel,
+    - Yevhenii Dubrovskyi,
+    - Jorgen Hendriksen,
