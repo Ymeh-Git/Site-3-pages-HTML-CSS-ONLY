@@ -90,6 +90,31 @@ A project to raise awaireness about forest and activities around it, to apprecia
 
 <hr>
 
+## Accueil
+
+### Hero section
+
+Between \<header> and \<main>
+
+```
+<section class="hero">
+    <video src="" class="background-hero"></video>
+    <img 
+    src="./img/logo/mickeylit-ai-generated-pixabay.png" 
+    alt="Logo arbre générée par IA - Logo de Mickeylit - Pixabay.com" 
+    class="logo hero-logo">
+    <h2 class="name">ECO'RANDO</h2>
+    <p class="intro">La préservation des forêts est notre priorité, profitez gratuitement d'activités physique en groupe le tout en vous instruisant et sensibilisant à la protection de nos forêts, commencez l'aventure !</p>
+</section>
+```
+
+After that all will be in \<main>
+
+###
+
+
+<hr>
+
 ## Special thanks to :
 ### logos : 
 -   Flaticon :
