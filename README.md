@@ -1,5 +1,7 @@
-# Site-3-pages-HTML-CSS-ONLY
+# Site-3-pages-HTML-CSS-ONLY -- ECO'RANDO
+
 Small project, 3 pages, using only HTML & CSS
+A project to raise awaireness about forest and activities around it, to appreciate our environment and nature's beauty. 
 
 ## Tree structure :
 
