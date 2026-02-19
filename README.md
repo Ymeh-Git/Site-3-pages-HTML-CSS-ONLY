@@ -65,7 +65,21 @@ A project to raise awaireness about forest and activities around it, to apprecia
 ### Header
 
 ```
-
+<header>
+    <div class="header-name-logo">
+        <img 
+        src="./img/logo/mickeylit-ai-generated-pixabay.png" 
+        alt="Logo arbre générée par IA - Logo de Mickeylit - Pixabay.com" 
+        class="header-logo">
+        <h1>Eco'Rando</h1>
+        <p>Plus proche de nos forêt, plus proche de nous même</p>
+    </div>
+    <nav class="header-nav">
+        <a href="./index.html" class="btn text-white active">Accueil</a>
+        <a href="./pages/activite.html" class="btn text-white">Actvités</a>
+        <a href="./pages/ecosysteme.html" class="btn text-white">Écosystème</a>
+    </nav>
+</header>
 ```
 
 ### Footer
@@ -76,4 +90,11 @@ A project to raise awaireness about forest and activities around it, to apprecia
 
 <hr>
 
-##
+## Special thanks to :
+### logos : 
+-   Flaticon :
+    - Freepik
+    - Laisa Islam
+
+- Pixabay : 
+    - Mickeylit
