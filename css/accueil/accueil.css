@@ -96,14 +96,10 @@
 /* </ECOSYSTEM SECTION> */
 
 /* <ACTIVITY SECTION> */
-
-
-/* </ACTIVITY SECTION> */
-
 /* <CARDS SECTION> */
 .cards-container{
     width: 100%;
-    gap: 100px 25px;
+    gap: 20px 0;
 }
 
 .card{
@@ -117,6 +113,7 @@
     background-size: 300% 300%;
     background-position: 35% 50%;
     transition: background-position 1s;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
 .card-content{
@@ -124,9 +121,9 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    transform: rotate(30deg);
     background-color: #34462e;
     transition: box-shadow 1s;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
 .card-background-img{
@@ -134,11 +131,13 @@
     object-fit: cover;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(1.4) rotate(-30deg);
+    transform: translate(-50%, -50%);
     width: 85%;
     height: 85%;
     border-radius: 15px;
-    transition: filter 0.8s;
+    transition: 
+    filter 0.8s, 
+    transform 0.5s;
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
@@ -149,9 +148,10 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(-30deg);
+    transform: translate(-50%, -50%);
     z-index: -1;
-    transition: 0.2s ease-in;
+    transition: z-index 0.2s ease-in
+    font-size 1s;
 }
 
 .card:hover{
@@ -159,13 +159,15 @@
 }
 
 .card:hover .card-title{
+    font-size: 1.4em;
     z-index: 2;
 }
 
 .card:hover .card-background-img{
+    transform: translate(-50%, -50%);
     filter: 
     blur(3px)
     brightness(50%);
 }
-
 /* </CARDS SECTION> */
+/* </ACTIVITY SECTION> */

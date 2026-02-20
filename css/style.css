@@ -26,12 +26,13 @@
 }
 
 html{
+    overflow-x: clip;
     scroll-behavior: smooth;
 }
 
 body{
     /* First test of color, BUT I like it and confirmed accessibility with WebAim contrast checker */
-    background-color: #34462e;
+    background: linear-gradient(145deg,#2b4657, #34462e);
 }
 
 h1, h2{
