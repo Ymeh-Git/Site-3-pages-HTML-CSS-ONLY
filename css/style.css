@@ -42,11 +42,36 @@ h1, h2{
 a{
     text-decoration: none;
 }
+
+main section{
+    min-height: 100vh;
+}
 /* /GLOBAL */
 
 /* TOOLS CLASS */
+/* PADDING */
+.pt-175{
+    padding-top: 175px;
+}
+
+.px-30{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.pb-30{
+    padding-bottom: 50px;
+}
+
 /* FLEXBOX */
 /* ROW */
+.flex-row-around{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
 .flex-row-between{
     display: flex;
     flex-direction: row;
@@ -76,6 +101,13 @@ a{
     align-items: center;
 }
 /* COLUMN */
+.flex-column-center-start{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 .flex-column, .flex-column-15, .flex-column-30{
     display: flex;
     flex-direction: column;
@@ -106,6 +138,27 @@ a{
     gap: 30px;
 }
 
+.flex-column-center-center, .flex-column-center-center-15{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column-center-center-15{
+    gap: 15px;
+}
+
+.flex-column-end-center, .flex-column-end-center-15{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.flex-column-end-center-15{
+    gap: 15px;
+}
 /* BLOCK */
 .block{
     display: inline;
@@ -123,6 +176,28 @@ a{
 }
 
 /* BTN */
+/* https://github.com/Ymeh-Git/btn-linear-gradient */
+.btn{
+    padding: 10px 30px;
+    
+    text-decoration: none;
+    color: #fff;
+    border-radius: 15px;
+    border: 2px solid transparent;
+
+    background: linear-gradient(145deg,#2b4657 30%, #B3E1F9 50% , #34462e 70%);
+    background-size: 300% 300%;
+    background-position: 5% 50%;
+    transition: 
+    background-position 0.8s,
+    border-color 1s ease-in;
+}
+
+.btn:hover{
+    background-position: 95% 50%;
+    border-color: #fff;
+}
+
 .btn-text-white{
     padding: 5px;
     color: white;

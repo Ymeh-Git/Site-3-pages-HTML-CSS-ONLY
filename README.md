@@ -70,19 +70,23 @@ We will go though this project step by step 🐌
 ### Header
 
 ```
-<header>
-    <div class="header-name-logo">
+<header class="flex-row-between">
+    <div class="header-name-logo flex-row-start-center-15">
+        <a href="./index.html">
         <img 
         src="./img/logo/mickeylit-ai-generated-pixabay.png" 
-        alt="Logo arbre générée par IA - Logo de Mickeylit - Pixabay.com" 
-        class="header-logo">
-        <h1>Eco'Rando</h1>
-        <p>Plus proche de nos forêt, plus proche de nous même</p>
+        alt="Logo Eco'Rando arbre générée par IA - Logo de Mickeylit - Pixabay.com" 
+        class="logo header-logo">
+        </a>
+        <div class="name-intro flex-column-center-start">
+            <h1>Eco'Rando</h1>
+            <p>Plus proche de nos forêt, plus proche de nous même</p>
+        </div>
     </div>
-    <nav class="header-nav">
-        <a href="./index.html" class="btn text-white active">Accueil</a>
-        <a href="./pages/activite.html" class="btn text-white">Actvités</a>
-        <a href="./pages/ecosysteme.html" class="btn text-white">Écosystème</a>
+    <nav class="header-nav flex-row-start-center-30">
+        <a href="./index.html" class="btn-text-white active">Accueil</a>
+        <a href="./pages/activite.html" class="btn-text-white">Activités</a>
+        <a href="./pages/ecosysteme.html" class="btn-text-white">Écosystème</a>
     </nav>
 </header>
 ```
@@ -90,44 +94,58 @@ We will go though this project step by step 🐌
 ### Footer
 
 ```
-<footer class="flex-row-space-between">
-    <section class="contact flex-row-space-between">
+<footer class="flex-row-around">
+    <!-- CONTACT SECTION -->
+    <section class="contact flex-column-start-start-15">
         <h2>Contact</h2>
-        <div class="phone">
-            <img 
-            src="./img/logo/telephone-ADI_ICONS-flaticon.png" 
-            alt="Logo Téléphone - Logo de ADI_ICONS - Flaticon.com" 
-            class="footer-img">
-            <a href="phoneto:0102030405" class="btn btn-text-white">+33 1 02 03 04 05</a>
+        <div class="phone flex-row-start-center-15">
+            <a href="phoneto:0102030405" class="">
+                <img 
+                src="./img/logo/telephone-ADI_ICONS-flaticon.png" 
+                alt="Logo Téléphone - Logo de ADI_ICONS - Flaticon.com" 
+                class="footer-img">
+            </a>
+            <a href="phoneto:0102030405" class="btn-text-white">+33 1 02 03 04 05</a>
         </div>
-        <div class="email flex-row-space-between">
-            <img 
-            src="./img/logo/email-freepik-flaticon.png" 
-            alt="Logo Mail - Logo de Freepik - Flaticon.com" 
-            class="footer-img">
-            <a href="mailto:faux.mail@gmail.com" class="btn btn-text-white">faux.mail@gmail.com</a>
+        <div class="email flex-row-start-center-15">
+            <a href="mailto:faux.mail@gmail.com" class="">
+                <img 
+                src="./img/logo/email-freepik-flaticon.png" 
+                alt="Logo Mail - Logo de Freepik - Flaticon.com" 
+                class="footer-img">
+            </a>
+            <a href="mailto:faux.mail@gmail.com" class="btn-text-white">faux.mail@gmail.com</a>
         </div>
-        <a href="#modal-mentions-légale" class="btn">Mentions légales</a>
+        <a href="#modal-mentions-légale" class="btn-text-white">Mentions légales</a>
     </section>
-    <img 
-    src="./img/logo/mickeylit-ai-generated-pixabay.png" 
-    alt="Logo Eco'Rando arbre générée par IA - Logo de Mickeylit - Pixabay.com" 
-    class="logo footer-logo">
-    <section class="reseau">
+    <!-- LOGO -->
+    
+    <a href="./index.html">
+        <img 
+        src="./img/logo/mickeylit-ai-generated-pixabay.png" 
+        alt="Logo Eco'Rando arbre générée par IA - Logo de Mickeylit - Pixabay.com" 
+        class="logo footer-logo">
+    </a>
+    <!-- SOCIAL MEDIA SECTION -->
+    <section class="reseau flex-column-start-start-15">
         <h2>Réseaux sociaux</h2>
-        <div class="facebook flex-row-space-between">
-            <img 
-            src="./img/logo/freepik-facebook-flaticon.png" 
-            alt="Logo Facebook - Logo de Freepik - Flaticon.com" 
-            class="footer-img">
-            <a href="https://www.facebook.com" class="btn btn-text-white">Eco'Rando</a>
+        <div class="facebook flex-row-start-center-15">
+            <a href="https://www.facebook.com" class="">
+                <img 
+                src="./img/logo/freepik-facebook-flaticon.png" 
+                alt="Logo Facebook - Logo de Freepik - Flaticon.com" 
+                class="footer-img">
+            </a>
+            <a href="https://www.facebook.com" class="btn-text-white">Eco'Rando</a>
         </div>
-        <div class="instagram flex-row-space-between">
-            <img 
-            src="./img/logo/Laisa-islam-instagram-flaticon.png" 
-            alt="Logo Instagram - Logo de Laisa Islam - Flaticon.com" 
-            class="footer-img">
-            <a href="https://www.instagram.com" class="btn btn-text-white">@Eco_Rando</a>
+        <div class="instagram flex-row-start-center-15">
+            <a href="https://www.instagram.com" class="">
+                <img 
+                src="./img/logo/Laisa-islam-instagram-flaticon.png" 
+                alt="Logo Instagram - Logo de Laisa Islam - Flaticon.com" 
+                class="footer-img">
+            </a>
+            <a href="https://www.instagram.com" class="btn-text-white block">@Eco_Rando</a>
         </div>
     </section>
 </footer>

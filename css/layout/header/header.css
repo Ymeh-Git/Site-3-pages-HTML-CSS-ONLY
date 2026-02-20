@@ -21,11 +21,12 @@ header{
 
 /* NAME AND INTRO */
 .header-name-logo .name-intro h1{
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .header-name-logo .name-intro p{
     font-size: 0.8em;
+    width: 55%;
 }
 
 /* NAV-BAR */

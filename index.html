@@ -6,6 +6,7 @@
     <meta name="author" content="Jeremy D. - Ymeh-Git">
     <meta name="description" content="Page d'accueil sur le thème de la préservation de notre écosystème, de la conscience collective et des activités programmées en groupe(randonnées, balades, cyclisme, canyoning, parapentes, ...)">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/accueil/accueil.css">
     <link rel="shortcut icon" href="./img/logo/mickeylit-ai-generated-pixabay.png" type="image/x-icon">
     <title>Eco'Rando - Accueil</title>
 </head>
@@ -19,7 +20,7 @@
             alt="Logo Eco'Rando arbre générée par IA - Logo de Mickeylit - Pixabay.com" 
             class="logo header-logo">
             </a>
-            <div class="name-intro flex-column-center-center">
+            <div class="name-intro flex-column-center-start">
                 <h1>Eco'Rando</h1>
                 <p>Plus proche de nos forêt, plus proche de nous même</p>
             </div>
@@ -31,20 +32,26 @@
         </nav>
     </header>
     <!-- HERO SECTION -->
-    <section class="hero flex-column-center-center">
+    <section class="hero flex-column-center-center-15 pt-175">
         <!-- Three attributes that are essentials : autoplay, muted, loop -->
-        <video src="./video/ChristianBodhi87531-602317601_medium-pixabay.mp4" class="background-hero" autoplay muted loop></video>
+        <video src="./video/ChristianBodhi87531-602317601_medium-pixabay.mp4" class="hero-background" autoplay muted loop></video>    
         <img 
         src="./img/logo/mickeylit-ai-generated-pixabay.png" 
         alt="Logo Eco'Rando arbre générée par IA - Logo de Mickeylit - Pixabay.com" 
         class="hero-logo">
-        <h2 class="name">ECO'RANDO</h2>
-        <p class="intro">La préservation des forêts est notre priorité, profitez gratuitement d'activités physique en groupe le tout en vous instruisant et sensibilisant à la protection de nos forêts, commencez l'aventure !</p>
+        <h2 class="hero-name">ECO'RANDO</h2>
+        <p class="hero-intro">
+            La préservation des forêts est notre priorité, profitez gratuitement d'activités physique en groupe le tout en vous instruisant et sensibilisant à la protection de nos forêts, commencez l'aventure !
+        </p>
+        <div class="hero-btn-field flex-row-around">
+            <a href="#ecosysteme" class="btn">Écosystème</a>
+            <a href="#activite" class="btn">Nos activités</a>
+        </div>
     </section>
     <!-- MAIN CONTENT -->
     <main>
         <!-- ECOSYSTEM SECTION -->
-        <section class="ecosysteme flex-column-center-center">
+        <section id="ecosysteme" class="ecosysteme flex-column-center-center pt-175 px-30 pb-30">
             <h2 class="section-title">Notre écosystème</h2>
             <!-- PRESENTATION ARTICLE -->
             <article class="flex-row">
@@ -116,7 +123,7 @@
             </article>
         </section>
         <!-- ACTIVITY SECTION -->
-        <section class="activite flex-column-center-center">
+        <section id="activite" class="activite flex-column-center-center pt-175 px-30 pb-30">
             <h2 class="section-title">Activités</h2>
             <nav class="cards-container">
                 <!-- CARD RANDO -->
@@ -163,7 +170,7 @@
         </section>
     </main>
     <!-- FOOTER -->
-    <footer class="flex-row-between">
+    <footer class="flex-row-around">
         <!-- CONTACT SECTION -->
         <section class="contact flex-column-start-start-15">
             <h2>Contact</h2>
