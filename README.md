@@ -135,7 +135,7 @@ We will go though this project step by step 🐌
 
 <hr>
 
-## Accueil
+## Homepage
 
 ### Hero section
 
@@ -286,7 +286,7 @@ After that all will be in \<main>
 ##
 
 ## Special thanks to :
-### logos : 
+### logos & images : 
 -   [Flaticon](https://www.flaticon.com/fr/) :
     - Freepik,
     - Laisa Islam,
@@ -300,3 +300,7 @@ After that all will be in \<main>
     - Philippe Oursel,
     - Yevhenii Dubrovskyi,
     - Jorgen Hendriksen,
+
+### video : 
+- [Pixabay](https://pixabay.com/fr/) : 
+    - ChristianBodhi
