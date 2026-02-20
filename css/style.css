@@ -1,5 +1,12 @@
+/* FONT IMPORT */
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* CSS IMPORT */
+@import './layout/footer/footer.css';
+@import './layout/footer/footer-mobile.css';
+@import './layout/header/header.css';
+@import './layout/header/header-mobile.css';
 
 /* RESET */
 *{
@@ -8,10 +15,20 @@
     box-sizing: border-box;
     font-size: 16px;
     /* confirmed accessibility with #34462e */
-    color: white;
+    color: #fff;
     font-family: "Libre Baskerville", serif;
 }
 /* GLOBAL */
+
+*:focus{
+    outline: 2px dashed red;
+    border-radius:15px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     /* First test of color, BUT I like it and confirmed accessibility with WebAim contrast checker */
     background-color: #34462e;
@@ -21,9 +38,15 @@ h1, h2{
     font-family: 'Rubik Dirt', system-ui;
     font-weight: 300;
 }
+
+a{
+    text-decoration: none;
+}
 /* /GLOBAL */
 
 /* TOOLS CLASS */
+/* FLEXBOX */
+/* ROW */
 .flex-row-between{
     display: flex;
     flex-direction: row;
@@ -31,11 +54,14 @@ h1, h2{
     align-items: stretch;
 }
 
-.flex-row-start-center-15, .flex-row-start-center-30{
+.flex-row-start-center,.flex-row-start-center-15, .flex-row-start-center-30{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+}
+
+.flex-row-start-center-15{
     gap: 15px;
 }
 
@@ -43,6 +69,49 @@ h1, h2{
     gap: 30px;
 }
 
+.flex-row-center-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/* COLUMN */
+.flex-column, .flex-column-15, .flex-column-30{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.flex-column-15{
+    gap: 15px;
+}
+
+.flex-column-30{
+    gap: 30px;
+}
+
+.flex-column-start-start, .flex-column-start-start-15, .flex-column-start-start-30{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.flex-column-start-start-15{
+    gap: 15px;
+}
+
+.flex-column-start-start-30{
+    gap: 30px;
+}
+
+/* BLOCK */
+.block{
+    display: inline;
+}
+
+/* LOGO */
 .logo{
     border-radius: 50%;
     transition: 0.8s;
@@ -53,11 +122,12 @@ h1, h2{
     transform: scale(1.1);
 }
 
+/* BTN */
 .btn-text-white{
     padding: 5px;
-    text-decoration: none;
     color: white;
     border: 2px solid transparent;
+    transition: border-bottom-color 0.5s;
 }
 
 .btn-text-white:hover{

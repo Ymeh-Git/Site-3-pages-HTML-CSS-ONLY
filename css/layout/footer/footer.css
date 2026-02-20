@@ -1,0 +1,39 @@
+/* <FOOTER> */
+
+footer{
+    /* More space X's axe than header */
+    padding: 30px 30px;
+}
+
+footer .contact h2, footer .reseau h2{
+    font-size: 1.5em;
+}
+
+/* Logo facebook, insta, phone, mail */
+.footer-img{
+    width: 35px;
+    height: 35px;
+    transition: 0.8s;
+}
+
+.footer-img:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 10px #fff);
+}
+
+.reseau .facebook .footer-img:hover{
+    filter: drop-shadow(0 0 10px #2596ff);
+}
+
+.reseau .instagram .footer-img:hover{
+    filter: 
+    drop-shadow(0px 0px 2px #ce1d61)
+    drop-shadow(5px 5px 5px #6a1dce)
+    drop-shadow(-5px -5px 5px #e7b836);
+}
+
+.footer-logo{
+    width: 150px;
+    height: 150px;
+}
+/* </FOOTER> */

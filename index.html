@@ -6,8 +6,6 @@
     <meta name="author" content="Jeremy D. - Ymeh-Git">
     <meta name="description" content="Page d'accueil sur le thème de la préservation de notre écosystème, de la conscience collective et des activités programmées en groupe(randonnées, balades, cyclisme, canyoning, parapentes, ...)">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/layout/header/header.css">
-    <link rel="stylesheet" href="./css/layout/footer/footer.css">
     <link rel="shortcut icon" href="./img/logo/mickeylit-ai-generated-pixabay.png" type="image/x-icon">
     <title>Eco'Rando - Accueil</title>
 </head>
@@ -166,43 +164,57 @@
     </main>
     <!-- FOOTER -->
     <footer class="flex-row-between">
-        <section class="contact flex-row-between">
+        <!-- CONTACT SECTION -->
+        <section class="contact flex-column-start-start-15">
             <h2>Contact</h2>
-            <div class="phone">
-                <img 
-                src="./img/logo/telephone-ADI_ICONS-flaticon.png" 
-                alt="Logo Téléphone - Logo de ADI_ICONS - Flaticon.com" 
-                class="footer-img">
+            <div class="phone flex-row-start-center-15">
+                <a href="phoneto:0102030405" class="">
+                    <img 
+                    src="./img/logo/telephone-ADI_ICONS-flaticon.png" 
+                    alt="Logo Téléphone - Logo de ADI_ICONS - Flaticon.com" 
+                    class="footer-img">
+                </a>
                 <a href="phoneto:0102030405" class="btn-text-white">+33 1 02 03 04 05</a>
             </div>
-            <div class="email flex-row-between">
-                <img 
-                src="./img/logo/email-freepik-flaticon.png" 
-                alt="Logo Mail - Logo de Freepik - Flaticon.com" 
-                class="footer-img">
+            <div class="email flex-row-start-center-15">
+                <a href="mailto:faux.mail@gmail.com" class="">
+                    <img 
+                    src="./img/logo/email-freepik-flaticon.png" 
+                    alt="Logo Mail - Logo de Freepik - Flaticon.com" 
+                    class="footer-img">
+                </a>
                 <a href="mailto:faux.mail@gmail.com" class="btn-text-white">faux.mail@gmail.com</a>
             </div>
-            <a href="#modal-mentions-légale" class="btn">Mentions légales</a>
+            <a href="#modal-mentions-légale" class="btn-text-white">Mentions légales</a>
         </section>
-        <img 
-        src="./img/logo/mickeylit-ai-generated-pixabay.png" 
-        alt="Logo Eco'Rando arbre générée par IA - Logo de Mickeylit - Pixabay.com" 
-        class="logo footer-logo">
-        <section class="reseau">
+        <!-- LOGO -->
+        
+        <a href="./index.html">
+            <img 
+            src="./img/logo/mickeylit-ai-generated-pixabay.png" 
+            alt="Logo Eco'Rando arbre générée par IA - Logo de Mickeylit - Pixabay.com" 
+            class="logo footer-logo">
+        </a>
+        <!-- SOCIAL MEDIA SECTION -->
+        <section class="reseau flex-column-start-start-15">
             <h2>Réseaux sociaux</h2>
-            <div class="facebook flex-row-between">
-                <img 
-                src="./img/logo/freepik-facebook-flaticon.png" 
-                alt="Logo Facebook - Logo de Freepik - Flaticon.com" 
-                class="footer-img">
-                <a href="https://www.facebook.com" class="btn btn-text-white">Eco'Rando</a>
+            <div class="facebook flex-row-start-center-15">
+                <a href="https://www.facebook.com" class="">
+                    <img 
+                    src="./img/logo/freepik-facebook-flaticon.png" 
+                    alt="Logo Facebook - Logo de Freepik - Flaticon.com" 
+                    class="footer-img">
+                </a>
+                <a href="https://www.facebook.com" class="btn-text-white">Eco'Rando</a>
             </div>
-            <div class="instagram flex-row-between">
-                <img 
-                src="./img/logo/Laisa-islam-instagram-flaticon.png" 
-                alt="Logo Instagram - Logo de Laisa Islam - Flaticon.com" 
-                class="footer-img">
-                <a href="https://www.instagram.com" class="btn btn-text-white">@Eco_Rando</a>
+            <div class="instagram flex-row-start-center-15">
+                <a href="https://www.instagram.com" class="">
+                    <img 
+                    src="./img/logo/Laisa-islam-instagram-flaticon.png" 
+                    alt="Logo Instagram - Logo de Laisa Islam - Flaticon.com" 
+                    class="footer-img">
+                </a>
+                <a href="https://www.instagram.com" class="btn-text-white block">@Eco_Rando</a>
             </div>
         </section>
     </footer>
