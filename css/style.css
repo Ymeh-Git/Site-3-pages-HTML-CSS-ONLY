@@ -153,6 +153,13 @@ main section{
     justify-content: center;
     align-items: center;
 }
+/* ROW-WRAP */
+.flex-wrap-row-around-rg-150{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-around;
+    align-items: stretch;
+}
 /* COLUMN */
 .flex-column-center-start{
     display: flex;
@@ -242,7 +249,7 @@ main section{
     border-radius: 15px;
     border: 2px solid transparent;
 
-    background: linear-gradient(145deg,#2b4657 30%, #B3E1F9 50% , #34462e 70%);
+    background: linear-gradient(145deg,#2b4657 30%, #ffaf1b 50% , #34462e 70%);
     background-size: 300% 300%;
     background-position: 5% 50%;
     transition: 

@@ -102,14 +102,70 @@
 
 /* <CARDS SECTION> */
 .cards-container{
-    width: 100%
+    width: 100%;
+    gap: 100px 25px;
 }
 
 .card{
-    width: 20%;
+    display: block;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    border-radius: 50%;
+    padding: 10px;
+    background:linear-gradient(145deg,#2b4657, #B3E1F9, #ffaf1b);
+    background-size: 300% 300%;
+    background-position: 35% 50%;
+    transition: background-position 1s;
 }
 
-.card-content img{
+.card-content{
+    border-radius: 15px;
     width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transform: rotate(30deg);
+    background-color: #34462e;
+    transition: box-shadow 1s;
 }
+
+.card-background-img{
+    position: absolute;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.4) rotate(-30deg);
+    width: 85%;
+    height: 85%;
+    border-radius: 15px;
+    transition: filter 0.8s;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.card-title{
+    font-size: 1.2em;
+    width: 85%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-30deg);
+    z-index: -1;
+    transition: 0.2s ease-in;
+}
+
+.card:hover{
+    background-position: 95% 75%;
+}
+
+.card:hover .card-title{
+    z-index: 2;
+}
+
+.card:hover .card-background-img{
+    filter: 
+    blur(3px)
+    brightness(50%);
+}
+
 /* </CARDS SECTION> */
