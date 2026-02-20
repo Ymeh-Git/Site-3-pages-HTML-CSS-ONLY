@@ -1,6 +1,7 @@
 /* HOMEPAGE (ACCUEIL) CSS */
 @import './accueil-mobile.css';
 
+/* <HERO SECTION> */
 .hero{
     position: relative;
     width: 100%;
@@ -34,7 +35,72 @@
 .hero-btn-field{
     width: 50%;
 }
+/* </HERO SECTION> */
 
+/* <ECOSYSTEM SECTION> */
+.ecosysteme article{
+    width: 80%;
+    text-align: justify;
+    /* confirmed accessibility with #fff */
+    background-color: #4B5D46;
+    border-radius: 15px;
+    /* border: 2px solid white; */
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto 50px;
+}
+/* NORMAL GRID */
+.ecosysteme .normal .ecosysteme-img{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.ecosysteme .normal .ecosysteme-text{
+    grid-column: 2/6;
+    grid-row: 1;
+} 
+
+.ecosysteme .normal a{
+    grid-column: 4/6;
+    grid-row: 2;
+} 
+/* REVERSE GRID */
+.ecosysteme .reverse .ecosysteme-img{
+    grid-column: 6;
+    grid-row: 1;
+}
+
+.ecosysteme .reverse .ecosysteme-text{
+    grid-column: 2/6;
+    grid-row: 1;
+} 
+
+.ecosysteme .reverse a{
+    grid-column: 4/6;
+    grid-row: 2;
+} 
+
+.ecosysteme h3{
+    font-size: 1.3em;
+}
+
+.ecosysteme-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* </ECOSYSTEM SECTION> */
+
+/* <ACTIVITY SECTION> */
+
+
+/* </ACTIVITY SECTION> */
+
+/* <CARDS SECTION> */
 .cards-container{
     width: 100%
 }
@@ -46,3 +112,4 @@
 .card-content img{
     width: 100%;
 }
+/* </CARDS SECTION> */

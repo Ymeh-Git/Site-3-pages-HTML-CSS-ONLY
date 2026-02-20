@@ -46,10 +46,22 @@ a{
 main section{
     min-height: 100vh;
 }
+
+.section-title{
+    font-size: 2em;
+}
 /* /GLOBAL */
 
 /* TOOLS CLASS */
+/* TEXT */
+.text-end{
+    text-align: end;
+}
 /* PADDING */
+.p-30{
+    padding: 30px;
+}
+
 .pt-175{
     padding-top: 175px;
 }
@@ -59,12 +71,53 @@ main section{
     padding-right: 30px;
 }
 
+.py-50{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 .pb-30{
     padding-bottom: 50px;
 }
 
 /* FLEXBOX */
 /* ROW */
+.flex-row, .flex-row-15, .flex-row-30{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.flex-row-15{
+    gap: 15px;
+}
+
+.flex-row-30{
+    gap: 30px;
+}
+
+.flex-row-reverse, .flex-row-reverse-15, .flex-row-reverse-30{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.flex-row-reverse-15{
+    gap: 15px;
+}
+
+.flex-row-reverse-30{
+    gap: 15px;
+}
+
+.flex-row-end{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+
 .flex-row-around{
     display: flex;
     flex-direction: row;
@@ -138,7 +191,7 @@ main section{
     gap: 30px;
 }
 
-.flex-column-center-center, .flex-column-center-center-15{
+.flex-column-center-center, .flex-column-center-center-15, .flex-column-center-center-30{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -147,6 +200,10 @@ main section{
 
 .flex-column-center-center-15{
     gap: 15px;
+}
+
+.flex-column-center-center-30{
+    gap: 30px;
 }
 
 .flex-column-end-center, .flex-column-end-center-15{
