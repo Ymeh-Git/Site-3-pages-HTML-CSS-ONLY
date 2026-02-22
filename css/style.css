@@ -199,7 +199,7 @@ main section{
     gap: 30px;
 }
 
-.flex-column-center-center, .flex-column-center-center-15, .flex-column-center-center-30{
+.flex-column-center-center, .flex-column-center-center-15, .flex-column-center-center-30, .flex-column-center-center-60{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -212,6 +212,10 @@ main section{
 
 .flex-column-center-center-30{
     gap: 30px;
+}
+
+.flex-column-center-center-60{
+    gap: 60px;
 }
 
 .flex-column-end-center, .flex-column-end-center-15{

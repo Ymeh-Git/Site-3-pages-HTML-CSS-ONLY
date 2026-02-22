@@ -28,7 +28,6 @@
     /* color: white; */
     color: transparent;
     -webkit-text-stroke: 0.5px white;
-    background-clip: text;
 }
 
 .hero-intro{
@@ -94,7 +93,6 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    object-fit: cover;
 }
 
 /* </ECOSYSTEM SECTION> */
@@ -175,3 +173,14 @@
 }
 /* </CARDS SECTION> */
 /* </ACTIVITY SECTION> */
+
+@media only screen and (min-width: 1800px) {
+    
+.hero-intro{
+    width: 20%;
+}
+
+.hero-btn-field{
+    width: 20%;
+}
+}
