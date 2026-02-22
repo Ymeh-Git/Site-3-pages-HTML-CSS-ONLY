@@ -14,7 +14,7 @@
     height: calc(100% + 80px);
     /* Where this video will start -80px top which is its excess height to hide video automatic btn */
     top: -80px;
-    object-fit: cover;
+    object-fit:cover;
     z-index: -1;
 }
 
@@ -25,6 +25,10 @@
 
 .hero-name{
     font-size: 3.5em;
+    /* color: white; */
+    color: transparent;
+    -webkit-text-stroke: 0.5px white;
+    background-clip: text;
 }
 
 .hero-intro{
