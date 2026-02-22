@@ -1,0 +1,51 @@
+/* HOMEPAGE (ACCUEIL) MOBILE */
+@media only screen and (max-width: 425px) {
+    .hero{
+        display: none;
+    }
+
+    .ecosysteme article{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        gap: 30px;
+    }
+    .ecosysteme-img{
+        align-self: center;
+    }
+    
+    .ecosysteme-text h3{
+        text-align: center;
+    }
+
+    .card-background-img{
+        z-index: -1;
+    }
+    .card-title{
+        z-index: 2;
+        top: 0;
+    }
+
+    .footer{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .footer-logo{
+        order: 1;
+    }
+
+    .contact{
+        order: 2;
+        /* To force contact/reseau to align themselves */
+        width: 250px;
+    }
+
+    .reseau{
+        order: 3;
+        width: 250px;
+    }
+}
