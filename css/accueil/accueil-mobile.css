@@ -21,6 +21,10 @@
         align-self: center;
     }
     
+    .ecosysteme-text p{
+        line-height: 1.5em;
+    }
+
     .ecosysteme-text h3{
         text-align: center;
     }

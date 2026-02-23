@@ -19,7 +19,7 @@
     height: calc(100% + 80px);
     /* Where this video will start -80px top which is its excess height to hide video automatic btn */
     top: -80px;
-    filter: brightness(0.9);
+    filter: brightness(0.7);
     object-fit:cover;
     z-index: -1;
 }
@@ -92,6 +92,10 @@
     justify-content: flex-start;
     align-items: stretch;
     gap: 15px;
+}
+
+.ecosysteme-text p{
+    line-height: 2.7em;
 }
 /* NORMAL GRID */
 .ecosysteme .normal .ecosysteme-img{
