@@ -4,6 +4,10 @@
         display: none;
     }
 
+    .fixed-background-header{
+        height: 99px;
+    }
+
     .ecosysteme article{
         display: flex;
         flex-direction: column;

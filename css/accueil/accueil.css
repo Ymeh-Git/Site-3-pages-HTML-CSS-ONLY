@@ -51,6 +51,18 @@
 }
 /* </HERO SECTION> */
 
+.fixed-background-header{
+    position:sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 150px;
+    background: linear-gradient(145deg,#2b4657, #34462e);
+    background-size: 100% 100%;
+    backdrop-filter: blur(150px);
+    z-index: 3;
+}
+
 /* <ECOSYSTEM SECTION> */
 .ecosysteme, .activite{
     display: flex;

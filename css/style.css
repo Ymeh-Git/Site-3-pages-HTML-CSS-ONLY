@@ -32,7 +32,7 @@ html{
 
 body{
     /* First test of color, BUT I like it and confirmed accessibility with WebAim contrast checker */
-    background: linear-gradient(145deg,#2b4657, #34462e);
+    background: linear-gradient(80deg,#2b4657, #34462e);
 }
 
 h1, h2{
@@ -49,6 +49,7 @@ main section{
 }
 
 .section-title{
+    margin-top: 50px;
     font-size: 2em;
 }
 /* /GLOBAL */
@@ -66,7 +67,9 @@ main section{
 .pt-175{
     padding-top: 175px;
 }
-
+.pt-25{
+    padding-top: 25px;
+}
 .px-30{
     padding-left: 30px;
     padding-right: 30px;
