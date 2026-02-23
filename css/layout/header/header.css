@@ -2,6 +2,7 @@
 header{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 
@@ -14,6 +15,7 @@ header{
     padding: 10px 30px;
     gap: 15px;
     backdrop-filter: blur(5px);
+    background: transparent;
     /* This way it will be above everyone else */
     z-index: 3;
 }
@@ -63,7 +65,7 @@ header{
     flex-basis: 0;
 }
 
-.header-nav label,
+header label,
 #burger-menu-input{
   display: none;
 }
@@ -78,12 +80,26 @@ header{
 /* </HEADER> */
 
 @media only screen and (max-width: 426px) {
+    header{
+        justify-content: center;
+        gap: 0;
+        min-height: auto;
+        background: linear-gradient(145deg,#2b4657, #34462e);
+        background-size: 100vw 100vh;
+    }
+
+    header .header-name-logo{
+        margin: auto;
+    }
+
     header .header-name-logo .name-intro p{
         width: 100%;
     }
 
-    .header-nav input:checked ~ .burger-menu-items{
+    #burger-menu-input:checked ~ .header-nav .burger-menu-items{
         display: block;
+        height: 100vh;
+        width: 100vw;
     }
 
     .header-nav .burger-menu-items{
@@ -92,10 +108,11 @@ header{
 
     .burger-menu-items a{
         display: block;
+        text-align: center;
         width: 100%;
     }
     
-    .header-nav label {
+    header label {
         display: inline-block;
         font-size: 18px;
     }
