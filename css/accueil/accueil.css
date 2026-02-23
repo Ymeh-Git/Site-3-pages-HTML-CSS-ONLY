@@ -51,17 +51,7 @@
 }
 /* </HERO SECTION> */
 
-.fixed-background-header{
-    position:sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 150px;
-    background: linear-gradient(145deg,#2b4657, #34462e);
-    background-size: 100% 100%;
-    backdrop-filter: blur(150px);
-    z-index: 3;
-}
+
 
 /* <ECOSYSTEM SECTION> */
 .ecosysteme, .activite{
@@ -172,8 +162,7 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: #34462e;
-    transition: box-shadow 1s;
+    background-color: #34462e;  
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 

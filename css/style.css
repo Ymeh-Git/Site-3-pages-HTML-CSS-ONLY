@@ -21,7 +21,7 @@
 /* GLOBAL */
 
 *:focus{
-    outline: 2px dashed red;
+    outline: 4px dashed #c42d2d;
     border-radius:15px;
 }
 
@@ -44,13 +44,32 @@ a{
     text-decoration: none;
 }
 
-main section{
+main{
     min-height: 100vh;
 }
 
 .section-title{
     margin-top: 50px;
     font-size: 2em;
+    text-align: center;
+}
+
+.fixed-background-header{
+    position:sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 150px;
+    background: linear-gradient(145deg,#2b4657, #34462e);
+    background-size: 100% 100%;
+    backdrop-filter: blur(150px);
+    z-index: 3;
+}
+
+@media only screen and (max-width: 426px) {
+    .fixed-background-header{
+        height: 99px;
+    }
 }
 /* /GLOBAL */
 
@@ -64,12 +83,18 @@ main section{
     padding: 30px;
 }
 
-.pt-175{
-    padding-top: 175px;
-}
 .pt-25{
     padding-top: 25px;
 }
+
+.pt-150{
+    padding-top: 150px;
+}
+
+.pt-175{
+    padding-top: 175px;
+}
+
 .px-30{
     padding-left: 30px;
     padding-right: 30px;
