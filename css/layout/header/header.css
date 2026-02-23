@@ -1,11 +1,16 @@
 /* <HEADER> */
 header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
     position:fixed;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
-    height: 150px;
+    min-height: 150px;
     padding: 10px 30px;
     gap: 15px;
     backdrop-filter: blur(5px);
@@ -14,23 +19,84 @@ header{
 }
 
 /* LOGO */
+.header-name-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+}
+
 .header-name-logo .header-logo{
     width: 75px;
     height: 75px;
 }
 
 /* NAME AND INTRO */
+.name-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
 .header-name-logo .name-intro h1{
     font-size: 1.2em;
 }
 
 .header-name-logo .name-intro p{
     font-size: 0.8em;
-    width: 55%;
+    width: 100%;
 }
 
 /* NAV-BAR */
 .header-nav{
     height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-nav a{
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.header-nav label,
+#burger-menu-input{
+  display: none;
+}
+
+.burger-menu-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
 }
 /* </HEADER> */
+
+@media only screen and (max-width: 426px) {
+    header .header-name-logo .name-intro p{
+        width: 100%;
+    }
+
+    .header-nav input:checked ~ .burger-menu-items{
+        display: block;
+    }
+
+    .header-nav .burger-menu-items{
+        display: none;
+    }
+
+    .burger-menu-items a{
+        display: block;
+        width: 100%;
+    }
+    
+    .header-nav label {
+        display: inline-block;
+        font-size: 18px;
+    }
+}

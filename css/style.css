@@ -80,159 +80,6 @@ main section{
     padding-bottom: 50px;
 }
 
-/* FLEXBOX */
-/* ROW */
-.flex-row, .flex-row-15, .flex-row-30{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: stretch;
-}
-
-.flex-row-15{
-    gap: 15px;
-}
-
-.flex-row-30{
-    gap: 30px;
-}
-
-.flex-row-reverse, .flex-row-reverse-15, .flex-row-reverse-30{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    align-items: stretch;
-}
-
-.flex-row-reverse-15{
-    gap: 15px;
-}
-
-.flex-row-reverse-30{
-    gap: 15px;
-}
-
-.flex-row-end{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: stretch;
-}
-
-.flex-row-around{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: stretch;
-}
-
-.flex-row-between{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
-}
-
-.flex-row-start-center,.flex-row-start-center-15, .flex-row-start-center-30{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.flex-row-start-center-15{
-    gap: 15px;
-}
-
-.flex-row-start-center-30{
-    gap: 30px;
-}
-
-.flex-row-center-center{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-/* ROW-WRAP */
-.flex-wrap-row-around-rg-150{
-    display: flex;
-    flex-flow: wrap row;
-    justify-content: space-around;
-    align-items: stretch;
-}
-/* COLUMN */
-.flex-column-center-start{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.flex-column, .flex-column-15, .flex-column-30{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
-}
-
-.flex-column-15{
-    gap: 15px;
-}
-
-.flex-column-30{
-    gap: 30px;
-}
-
-.flex-column-start-start, .flex-column-start-start-15, .flex-column-start-start-30{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.flex-column-start-start-15{
-    gap: 15px;
-}
-
-.flex-column-start-start-30{
-    gap: 30px;
-}
-
-.flex-column-center-center, .flex-column-center-center-15, .flex-column-center-center-30, .flex-column-center-center-60{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.flex-column-center-center-15{
-    gap: 15px;
-}
-
-.flex-column-center-center-30{
-    gap: 30px;
-}
-
-.flex-column-center-center-60{
-    gap: 60px;
-}
-
-.flex-column-end-center, .flex-column-end-center-15{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.flex-column-end-center-15{
-    gap: 15px;
-}
-/* BLOCK */
-.block{
-    display: inline;
-}
-
 /* LOGO */
 .logo{
     border-radius: 50%;
@@ -247,6 +94,10 @@ main section{
 /* BTN */
 /* https://github.com/Ymeh-Git/btn-linear-gradient */
 .btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     padding: 10px 30px;
     
     text-decoration: none;

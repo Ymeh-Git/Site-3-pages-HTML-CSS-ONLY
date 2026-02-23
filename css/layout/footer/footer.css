@@ -1,8 +1,34 @@
 /* <FOOTER> */
 
 footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+
     /* More space X's axe than header */
     padding: 30px 30px;
+}
+
+
+footer .contact,
+footer .reseau{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 15px;
+}
+
+footer .contact .phone, 
+footer .contact .email,
+footer .reseau .facebook,
+footer .reseau .instagram{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
 }
 
 footer .contact h2, footer .reseau h2{

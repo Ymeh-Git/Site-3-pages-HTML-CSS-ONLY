@@ -1,5 +1,5 @@
 /* HOMEPAGE (ACCUEIL) MOBILE */
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 426px) {
     .hero{
         display: none;
     }
@@ -22,30 +22,9 @@
     .card-background-img{
         z-index: -1;
     }
+    
     .card-title{
         z-index: 2;
         top: 0;
-    }
-
-    .footer{
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 30px;
-    }
-
-    .footer-logo{
-        order: 1;
-    }
-
-    .contact{
-        order: 2;
-        /* To force contact/reseau to align themselves */
-        width: 250px;
-    }
-
-    .reseau{
-        order: 3;
-        width: 250px;
     }
 }
