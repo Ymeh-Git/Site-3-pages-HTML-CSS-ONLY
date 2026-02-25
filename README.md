@@ -314,6 +314,17 @@ After that all will be in \<main>
     - Freepik,
     - Laisa Islam,
     - ADI_ICONS,
+    - Chattapat,
+    - Flat Icons,
+    - Vectors,
+    - Smashicon,
+    - Gowi,
+    - Paul J.,
+    - Altop7,
+    - Ayub Irawan,
+    - Smalllikeart,
+    - Vector Market,
+    - Roundicons,
 
 - [Pixabay](https://pixabay.com/fr/) : 
     - Mickeylit,
@@ -323,6 +334,10 @@ After that all will be in \<main>
     - Philippe Oursel,
     - Yevhenii Dubrovskyi,
     - Jorgen Hendriksen,
+    - Sebastian Unrau,
+    - Mark Duffel,
+    - Ivan Bandura,
+    - Gaurav Patil,
 
 ### video : 
 - [Pixabay](https://pixabay.com/fr/) : 
