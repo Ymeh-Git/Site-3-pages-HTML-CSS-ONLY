@@ -51,6 +51,10 @@ sup{
     font-size: 0.7em;
 }
 
+p{
+    line-height: 2em;
+}
+
 .section-title{
     margin-top: 50px;
     font-size: 2em;
@@ -138,19 +142,23 @@ sup{
     justify-content: center;
     align-items: center;
     padding: 10px 60px;
+
     font-size: 1.2em;
     font-family: sans-serif;
     text-decoration: none;
-    color: #fff;
+    
     border-radius: 15px;
     border: 2px solid transparent;
-
+    
+    color: #fff;
+    
     background: linear-gradient(145deg,#2b4657 30%, #ffaf1b 50% , #34462e 70%);
     background-size: 300% 300%;
     background-position: 5% 50%;
-    transition: 
-    background-position 0.8s,
-    border-color 1s ease-in;
+    
+    cursor: pointer;
+    
+    transition: all 0.2s ease-out; 
 }
 
 .btn:hover{
@@ -185,3 +193,204 @@ sup{
     text-decoration: underline;
 }
 /* /TOOLS CLASS */
+
+/* MODALS */
+
+html:has(.overlay:target){
+    overflow-y: hidden;
+    scroll-behavior: auto;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    transition: opacity 200ms;
+    visibility: hidden;
+    opacity: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.overlay:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal{
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+
+    background-color: #fffeea;
+    color: black;
+
+    position: relative;
+    overflow: auto;
+}
+
+.modal p{
+    color: black;
+}
+.modal h2{
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 2em;
+}
+
+.modal h3{
+    color: black;
+}
+
+.modal .close{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    opacity: 0.8;
+    font-size: 3em;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 200ms;
+    color: black;
+    transition: 1s all ease;
+}
+
+.modal .close:hover{
+    transform: rotate(360deg);
+    color: #A02C2C;
+}
+
+.modal-content{
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.modal-prevention{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 50%;
+    gap: 30px;
+    padding: 20px;
+}
+
+.modal-prevention .modal-image-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+.modal-prevention .modal-image-text img{
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+}
+
+.modal-prevention .modal-image-text p{
+    text-align: start;
+}
+
+.modal-content form{
+    width: 50%;
+    padding: 20px;
+}
+
+.modal-content form label{
+    color: black;
+}
+
+.modal-content form:has(:not(.input-check:checked)) .btn-next{
+    display: none;
+}
+
+.modal-content form:has(.input-check:checked) .btn-next{
+    display: block;
+}
+
+.btn-close{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 60px;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 15px;
+    border: 2px solid transparent;
+
+    background: linear-gradient(145deg,#A02C2C 30%, #ffaf1b 50% , #fff42a 70%);
+    background-size: 300% 300%;
+    background-position: 5% 50%;
+    transition: all 0.2s ease-out; 
+}
+
+.btn-close:hover{
+    background-position: 95% 50%;
+    color: #000;
+    border-color: #000;
+}
+
+.btn-field{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 20px 0;
+}
+
+
+.modal-content .modal-prevention .message-urgent{
+    width: 100%;
+    background-color: #ffe8e8;
+    border: 2px solid #ff0000;
+    border-radius: 15px;
+    color: red;
+    padding: 15px 30px;
+    text-align: center;
+}
+
+.nav-modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 20px;
+}
+
+@media only screen and (max-width: 426px) {
+    *{
+        font-size: 14px;
+    }
+
+    .btn, .btn-close{
+        padding: 10px 40px;
+    }
+
+    .modal{
+        padding: 30px;
+    }
+
+    .modal-prevention{
+        padding: 0;
+    }
+    .modal-prevention, .modal-content form{
+        width: 100%;
+    }
+}
