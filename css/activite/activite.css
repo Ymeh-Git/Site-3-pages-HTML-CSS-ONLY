@@ -1,16 +1,94 @@
+header{
+    position: absolute;
+}
+
 main{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
 
+.section-title{
+    /* To match with gap in */
+    margin-bottom: 30px;
+}
+
+/* ASIDE NAV */
+.aside-nav{
+    position: fixed;
+    z-index: 5;
+    top: 50%;
+    left: 95%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    width: 200px;
+    padding: 15px 50px 15px 0;
+
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    
+    transform: translateX(30px);
+    transition: 1s;
+}
+
+.aside-nav-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    color: black;
+    font-size: 1.2em;
+}
+
+.aside-nav:hover, .aside-nav:has(a:focus){
+    transform: translateX(-100px);
+}
+
+.aside-nav-text p{
+    color: black;
+}
+
+.aside-nav-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.aside-nav a{
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid white;
+    transition: 1s;
+}
+
+.aside-nav a img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+/* NAV BELOW HEADER */
 .section-nav{
-    position:sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding-top: 150px;
+    padding-top: 160px;
     padding-bottom: 15px;
     width: 100%;
     background: linear-gradient(145deg,#2b4657, #34462e);
@@ -22,7 +100,10 @@ main{
 }
 
 .section-nav a{
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -38,7 +119,7 @@ main{
     object-fit: cover;
 }
 
-.section-nav a:hover{
+.section-nav a:hover, .aside-nav-btn a:hover{
     box-shadow: 0 0 10px white;
     background-color: #5287a8;
 }
@@ -54,6 +135,8 @@ main{
     font-size: 0.8em;
 }
 
+/* SECTIONS */
+
 .section-activite{
     position: relative;
     display: flex;
@@ -63,9 +146,8 @@ main{
     gap: 30px;
 
     width: 100%;
-    min-height: 400px;
+    min-height: 100vh;
     padding: 40px;
-    margin: 30px 0;
 }
 
 .section-activite-logo{
@@ -81,10 +163,21 @@ main{
     object-fit: cover;
 }
 
+.prevention{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
 .prevention img{
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    background: white;
+    object-fit: cover;
 }
 
 .prevention, .text-lien{
@@ -102,6 +195,7 @@ main{
     width: 80%;
     gap: 30px;
     padding: 45px;
+    line-height: 1.5em;
 }
 
 .text-lien{
@@ -113,4 +207,8 @@ main{
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
+}
+
+.to-top{
+    display: none;
 }

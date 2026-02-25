@@ -70,23 +70,28 @@ We will go though this project step by step 🐌
 ### Header
 
 ```
-<header class="flex-row-between">
-    <div class="header-name-logo flex-row-start-center-15">
-        <a href="./index.html">
+<!-- HEADER -->
+<header id="top">
+    <div class="header-name-logo">
+        <a href="../index.html">
         <img 
-        src="./img/logo/mickeylit-ai-generated-pixabay.png" 
+        src="../img/logo/mickeylit-ai-generated-pixabay.png" 
         alt="Logo Eco'Rando arbre générée par IA - Logo de Mickeylit - Pixabay.com" 
         class="logo header-logo">
         </a>
-        <div class="name-intro flex-column-center-start">
+        <div class="name-intro">
             <h1>Eco'Rando</h1>
-            <p>Plus proche de nos forêt, plus proche de nous même</p>
+            <p>Plus proche de nos forêt, <br>plus proche de nous même</p>
         </div>
     </div>
-    <nav class="header-nav flex-row-start-center-30">
-        <a href="./index.html" class="btn-text-white active">Accueil</a>
-        <a href="./pages/activite.html" class="btn-text-white">Activités</a>
-        <a href="./pages/ecosysteme.html" class="btn-text-white">Écosystème</a>
+    <label for="burger-menu-input">☰</label>
+    <input type="checkbox" id="burger-menu-input" />
+    <nav class="header-nav">
+        <div class="burger-menu-items">
+            <a href="../index.html" class="btn-text-white">Accueil</a>
+            <a href="./activite.html" class="btn-text-white active">Activités</a>
+            <a href="./ecosysteme.html" class="btn-text-white">Écosystème</a>
+        </div>
     </nav>
 </header>
 ```

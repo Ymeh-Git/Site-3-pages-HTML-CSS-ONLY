@@ -21,8 +21,7 @@
 /* GLOBAL */
 
 *:focus{
-    outline: 4px dashed #c42d2d;
-    border-radius:15px;
+    outline: 4px dashed #fff;
 }
 
 html{
@@ -46,6 +45,10 @@ a{
 
 main{
     min-height: 100vh;
+}
+
+sup{
+    font-size: 0.7em;
 }
 
 .section-title{
@@ -78,6 +81,10 @@ main{
 .text-end{
     text-align: end;
 }
+
+.text-start{
+    text-align: start;
+}
 /* PADDING */
 .p-30{
     padding: 30px;
@@ -85,6 +92,10 @@ main{
 
 .pt-25{
     padding-top: 25px;
+}
+
+.pt-50{
+    padding-top: 50px;
 }
 
 .pt-150{
@@ -162,5 +173,11 @@ main{
 .active{
     /* confirmed accessibility with #34462e */
     border-bottom-color: #fff;
+}
+
+.italic{
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 0.8em;
 }
 /* /TOOLS CLASS */
