@@ -194,16 +194,16 @@
     font-size 1s;
 }
 
-.card:hover{
+.card:hover, .card:focus{
     background-position: 95% 75%;
 }
 
-.card:hover .card-title{
+.card:hover .card-title, .card:focus .card-title{
     font-size: 1.4em;
     z-index: 2;
 }
 
-.card:hover .card-background-img{
+.card:hover .card-background-img, .card:focus .card-background-img{
     transform: translate(-50%, -50%);
     filter: 
     blur(3px)
