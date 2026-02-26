@@ -5,7 +5,7 @@ A project to raise awaireness about forest and activities around it, to apprecia
 
 Sorry for my Frenglish
 
-We will go though this project step by step 🐌
+We will go though this project only HTML part,  🐌
 
 **If you are eager to see the result, clone it or download .zip, extract it and open it in your browser**
 ## Tree structure :
@@ -31,12 +31,16 @@ We will go though this project step by step 🐌
             |    |         |__header.css
             |    |__style.css
             |__img
+            |    |__logo
+            |    |   |__[...]
             |    |__preparation
-            |        |__[...]
+            |    |   |__[...]
             |    |__[...]
             |__pages
             |    |__activite.html
             |    |__ecosysteme.html
+            |__video
+            |    |__[...]
             |__index.html
             |__README.md
 ```
