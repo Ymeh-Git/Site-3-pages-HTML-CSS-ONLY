@@ -15,6 +15,11 @@ main{
     margin-bottom: 30px;
 }
 
+.horaire{
+    font-size: 0.8em;
+    font-style: italic;
+}
+
 /* ASIDE NAV */
 .aside-nav{
     position: fixed;
@@ -211,4 +216,118 @@ main{
 
 .to-top{
     display: none;
+}
+
+.form-resa{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 15px;
+    width: 50%;
+}
+
+.form-resa .form-input, .form-resa label{
+    color: #000;
+}
+
+.form-resa .form-input{
+    padding: 5px;   
+    border-radius: 5px;
+}
+
+.condition{
+    color: black;
+    text-decoration: underline;
+}
+
+.overlay-resa-accepted{
+    position: fixed;
+    bottom: 2%;
+    right: 10%;
+    z-index: 999;
+    transition: opacity 200ms;
+    /* visibility: hidden; */
+    opacity: 0;
+    height: 120px;
+    width: 250px;
+    transform: translateX(200%);
+}
+
+.overlay-resa-accepted:target{
+    visibility: visible;
+    opacity: 1;
+    animation: 
+    pop-scroll 1.5s linear forwards,
+    fade 1s 5s linear forwards;
+}
+
+.modal-resa-accepted{
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+
+    background-color: #e1ffe1;
+    color: black;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    border-radius: 20px;
+}
+
+.modal-resa-accepted p{
+    color: green;
+    width: 80%;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.modal-resa-accepted .close{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    opacity: 0.8;
+    font-size: 3em;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 200ms;
+    color: rgb(32, 103, 31);
+    transition: 1s all ease;
+}
+
+.modal-resa-accepted .close:focus, .modal-resa-accepted .close:hover{
+    transform: rotate(360deg);
+    color: #A02C2C;
+}
+
+
+@keyframes pop-scroll {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0.8;
+    }
+
+    50%{
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+    100%{
+        transform: scale(0.5);
+        opacity: 0;
+        visibility: hidden;
+    }
 }

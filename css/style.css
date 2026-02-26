@@ -21,7 +21,9 @@
 /* GLOBAL */
 
 *:focus{
-    outline: 4px dashed #fff;
+    box-shadow: 0 0 10px #fff;
+    outline: 3px solid #A02C2C;
+    /* outline: 4px dashed #A02C2C; */
 }
 
 html{
@@ -214,6 +216,7 @@ html:has(.overlay:target){
     width: 100vw;
 }
 
+
 .overlay:target{
     visibility: visible;
     opacity: 1;
@@ -229,13 +232,19 @@ html:has(.overlay:target){
 
     position: relative;
     overflow: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .modal p{
     color: black;
 }
+
 .modal h2{
-    width: 100%;
+    width: 90%;
     text-align: center;
     color: black;
     font-size: 2em;
@@ -251,7 +260,7 @@ html:has(.overlay:target){
     right: 5%;
     opacity: 0.8;
     font-size: 3em;
-    border-radius: 50%;
+    border-radius: 20px;
     text-decoration: none;
     transition: all 200ms;
     color: black;
@@ -265,6 +274,7 @@ html:has(.overlay:target){
 
 .modal-content{
     height: 95%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -341,7 +351,7 @@ html:has(.overlay:target){
     transition: all 0.2s ease-out; 
 }
 
-.btn-close:hover{
+.btn-close:hover, .btn-close:focus{
     background-position: 95% 50%;
     color: #000;
     border-color: #000;

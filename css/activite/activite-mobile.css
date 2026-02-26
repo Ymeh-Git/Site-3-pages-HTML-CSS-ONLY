@@ -60,4 +60,8 @@
         padding: 10px;
         padding-right: calc(12% + 10px);
     }
+
+    .form-resa{
+        width: 100%;
+    }
 }

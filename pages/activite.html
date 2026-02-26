@@ -78,6 +78,7 @@
             <img src="../img/randonnee-yevhenii-dubrovskyi--unsplash.jpg" alt="" class="section-activite-logo">
             <div class="text-lien">
                 <h3>Randonnée</h3>
+                <p class="horaire">**Cette activité se déroule de : 8h-9h30**</p>
                 <p class="desktop">
                     Et si votre prochaine sortie entre amis avait un véritable impact ? Nous vous invitons à une randonnée immersive au cœur de nos massifs forestiers. Plus qu’une simple balade, c'est une invitation à redécouvrir la magie d'un écosystème où tout est lié : de la plus petite fourmi aux arbres centenaires qui nous surplombent.
                 </p>
@@ -106,6 +107,7 @@
             <img src="../img/canyoning-josh-fotheringham-GwRlyykKg-M-unsplash.jpg" alt="" class="section-activite-logo">
             <div class="text-lien">
                 <h3>Canyoning</h3>
+                <p class="horaire">**Pas d'heure précise pour cette activité, nécessite un minimum de 5 personnes pour être programmée**</p>
                 <p class="desktop">
                     Plongez littéralement dans les secrets de nos montagnes ! Le canyoning est une aventure verticale unique où l’on suit le chemin de l’eau à travers des parois sculptées par les siècles. Mais saviez-vous que ces gorges sont des refuges de biodiversité ultra-sensibles ?
                 </p>
@@ -135,6 +137,7 @@
             <img src="../img/kayak-philippe-oursel-Oer7jCMqZtk-unsplash.jpg" alt="" class="section-activite-logo">
             <div class="text-lien">
                 <h3>Kayak</h3>
+                <p class="horaire">**Cette activité se déroule de : 13h-15h**</p>
                 <p class="desktop">
                     Embarquez pour une expédition collective où le silence est roi ! Glisser sur l'eau en kayak permet d'accéder à des zones sauvages souvent inaccessibles à pied. Depuis la rivière, la forêt nous apparaît sous un angle nouveau : c'est ici que les arbres viennent s'abreuver et que la faune se rassemble.
                 </p>
@@ -164,6 +167,7 @@
             <img src="../img/velo-jorgen-hendriksen-xu2pJBFTW-M-unsplash.jpg" alt="" class="section-activite-logo">
             <div class="text-lien">
                 <h3>Vélo en forêt</h3>
+                <p class="horaire">**Cette activité se déroule de : 10h-12h**</p>
                 <p>
                     Prêts à avaler les kilomètres pour la bonne cause ? Enfourchez vos VTT ou vélos de gravel pour une traversée mémorable de nos massifs forestiers. Le vélo est le moyen idéal pour parcourir de vastes distances et comprendre la connectivité des habitats naturels.
                 </p>
@@ -219,7 +223,7 @@
                             <p>Animaux de compagnies autorisés uniquement en laisse</p>
                         </div>
                     </div>
-                    <form action="#modal-reservation" method="#">
+                    <form action="./activite.html#modal-reservation-rando" method="#">
                         <input type="checkbox" name="agreeTerms" id="agreeTerms" required class="input-check">
                         <label for="agreeTerms">J'accepte de respecter l'integralité des règles</label>
                         <div class="btn-field">
@@ -230,7 +234,35 @@
                 </div>
             </div>
         </div>
-        
+        <!-- MODAL RESA RANDO -->
+        <div id="modal-reservation-rando" class="overlay">
+            <div class="modal">
+                <h2>Réservation Randonnée</h2>
+                <a class="close" href="#rando">&times;</a>
+                    <form action="./activite.html#resa-accepted" method="#" class="form-resa">
+                        <label for="name">Nom</label>
+                        <input type="text" placeholder="Doe..." class="form-input" required>
+                        <label for="firstname">Prénom</label>
+                        <input type="text" placeholder="John" class="form-input" required>
+                        <label for="date">Réserver une date</label>
+                        <input type="date" class="form-input" required>
+                        <div class="checkbox">
+                            <input type="checkbox" name="agreeTerms" id="agreeTerms" class="input-check" required >
+                            <label for="agreeTerms">Je m'engage à respecter les horaires indiqués</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="agreeTermsEPI" required >
+                            <label for="agreeTermsEPI">Je m'engage à lire les <a href="https://www.ffrandonnee.fr/randonner/la-charte-du-randonneur/les-bons-gestes" target="_blank" class="condition">règles de sécurité</a></label>
+                        </div>
+                        <div class="btn-field">
+                            <input type="submit" value="Réserver" class="btn btn-resa">
+                            <a class="btn-close" href="#rando">Annuler</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
         <!-- MODAL CANYONING -->
         <div id="modal-info-canyoning" class="overlay">
             <div class="modal">
@@ -262,7 +294,7 @@
                             <p>Interdit aux animaux de compagnie</p>
                         </div>
                     </div>
-                    <form action="#modal-reservation" method="#">
+                    <form action="./activite.html#modal-reservation-canyoning" method="#">
                         <input type="checkbox" name="agreeTerms" id="agreeTerms" required class="input-check">
                         <label for="agreeTerms">J'accepte de respecter l'integralité des règles</label>
                         <div class="btn-field">
@@ -274,6 +306,35 @@
             </div>
         </div>
         
+        <!-- MODAL RESA CANYONING -->
+        <div id="modal-reservation-canyoning" class="overlay">
+            <div class="modal">
+                <h2>Réservation Canyoning</h2>
+                <a class="close" href="#canyoning">&times;</a>
+                    <form action="#resa-accepted" method="#" class="form-resa">
+                        <label for="name">Nom</label>
+                        <input type="text" placeholder="Doe..." class="form-input" required>
+                        <label for="firstname">Prénom</label>
+                        <input type="text" placeholder="John" class="form-input" required>
+                        <label for="date">Réserver une date</label>
+                        <input type="date" class="form-input" required>
+                        <div class="checkbox">
+                            <input type="checkbox" name="agreeTerms" id="agreeTerms" class="input-check" required >
+                            <label for="agreeTerms">Je m'engage à respecter les horaires indiqués</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="agreeTermsEPI" required >
+                            <label for="agreeTermsEPI">Je m'engage à lire les <a href="https://lesgeckos.fr/canyoning/securite-canyoning/" target="_blank" class="condition">règles de sécurité</a></label>
+                        </div>
+                        <div class="btn-field">
+                            <input type="submit" value="Réserver" class="btn btn-resa">
+                            <a class="btn-close" href="#canyoning">Annuler</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
         <!-- MODAL KAYAK -->
         <div id="modal-info-kayak" class="overlay">
             <div class="modal">
@@ -305,11 +366,40 @@
                             <p>Interdit aux animaux de compagnie</p>
                         </div>
                     </div>
-                    <form action="#modal-reservation" method="#">
+                    <form action="./activite.html#modal-reservation-kayak" method="#">
                         <input type="checkbox" name="agreeTerms" id="agreeTerms" required class="input-check">
                         <label for="agreeTerms">J'accepte de respecter l'integralité des règles</label>
                         <div class="btn-field">
                             <input type="submit" value="Continuer" class="btn btn-next">
+                            <a class="btn-close" href="#kayak">Annuler</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL RESA KAYAK -->
+        <div id="modal-reservation-kayak" class="overlay">
+            <div class="modal">
+                <h2>Réservation Kayak</h2>
+                <a class="close" href="#kayak">&times;</a>
+                    <form action="#resa-accepted" method="#" class="form-resa">
+                        <label for="name">Nom</label>
+                        <input type="text" placeholder="Doe..." class="form-input" required>
+                        <label for="firstname">Prénom</label>
+                        <input type="text" placeholder="John" class="form-input" required>
+                        <label for="date">Réserver une date</label>
+                        <input type="date" class="form-input" required>
+                        <div class="checkbox">
+                            <input type="checkbox" name="agreeTerms" id="agreeTerms" class="input-check" required >
+                            <label for="agreeTerms">Je m'engage à respecter les horaires indiqués</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="agreeTermsEPI" required >
+                            <label for="agreeTermsEPI">Je m'engage à lire les <a href="https://www.canoes-butterfly.fr/les-regles-de-securite-en-canoe-kayak/" target="_blank" class="condition">règles de sécurité</a></label>
+                        </div>
+                        <div class="btn-field">
+                            <input type="submit" value="Réserver" class="btn btn-resa">
                             <a class="btn-close" href="#kayak">Annuler</a>
                         </div>
                     </form>
@@ -348,7 +438,7 @@
                             <p>Interdit aux animaux de compagnie</p>
                         </div>
                     </div>
-                    <form action="#modal-reservation" method="#">
+                    <form action="./activite.html#modal-reservation-velo" method="#">
                         <input type="checkbox" name="agreeTerms" id="agreeTerms" required class="input-check">
                         <label for="agreeTerms">J'accepte de respecter l'integralité des règles</label>
                         <div class="btn-field">
@@ -356,6 +446,44 @@
                             <a class="btn-close" href="#cycling">Annuler</a>
                         </div>
                     </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- MODAL RESA KAYAK -->
+        <div id="modal-reservation-velo" class="overlay">
+            <div class="modal">
+                <h2>Réservation Vélo</h2>
+                <a class="close" href="#cycling">&times;</a>
+                    <form action="#resa-accepted" method="#" class="form-resa">
+                        <label for="name">Nom</label>
+                        <input type="text" placeholder="Doe..." class="form-input" required>
+                        <label for="firstname">Prénom</label>
+                        <input type="text" placeholder="John" class="form-input" required>
+                        <label for="date">Réserver une date</label>
+                        <input type="date" class="form-input" required>
+                        <div class="checkbox">
+                            <input type="checkbox" name="agreeTerms" id="agreeTerms" class="input-check" required >
+                            <label for="agreeTerms">Je m'engage à respecter les horaires indiqués</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="agreeTermsEPI" required >
+                            <label for="agreeTermsEPI">Je m'engage à lire les <a href="https://www.canoes-butterfly.fr/les-regles-de-securite-en-canoe-kayak/" target="_blank" class="condition">règles de sécurité</a></label>
+                        </div>
+                        <div class="btn-field">
+                            <input type="submit" value="Réserver" class="btn btn-resa">
+                            <a class="btn-close" href="#cycling">Annuler</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL RESA ACCEPTED -->
+        <div id="resa-accepted" class="overlay-resa-accepted">
+            <div class="modal-resa-accepted">
+                <a class="close" href="#">&times;</a>
+                <p>✅ Votre réservation a été transmise</p>
                 </div>
             </div>
         </div>
