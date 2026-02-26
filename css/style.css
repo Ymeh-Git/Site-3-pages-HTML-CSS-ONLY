@@ -356,10 +356,10 @@ html:has(.overlay:target){
 
 .modal-content .modal-prevention .message-urgent{
     width: 100%;
-    background-color: #ffe8e8;
-    border: 2px solid #ff0000;
+    background-color: #A02C2C;
+    border: 2px solid #fff;
     border-radius: 15px;
-    color: red;
+    color: #fff;
     padding: 15px 30px;
     text-align: center;
 }
