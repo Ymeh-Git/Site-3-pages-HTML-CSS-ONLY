@@ -128,6 +128,12 @@
     border-radius: 50%;
 }
 
+iframe{
+    border-radius: 15px;
+    width: 50vw; 
+    height: 50vh;
+}
+
 /* </ECOSYSTEM SECTION> */
 
 /* <ACTIVITY SECTION> */

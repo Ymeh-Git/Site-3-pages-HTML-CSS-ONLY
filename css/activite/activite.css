@@ -18,6 +18,7 @@ main{
 .horaire{
     font-size: 0.8em;
     font-style: italic;
+    text-align: center;
 }
 
 /* ASIDE NAV */
@@ -244,7 +245,7 @@ main{
 .overlay-resa-accepted{
     position: fixed;
     bottom: 2%;
-    right: 10%;
+    right: 5%;
     z-index: 999;
     transition: opacity 200ms;
     /* visibility: hidden; */

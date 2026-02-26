@@ -64,4 +64,8 @@
     .form-resa{
         width: 100%;
     }
+    
+    .overlay-resa-accepted{
+        right: 15%;
+    }
 }

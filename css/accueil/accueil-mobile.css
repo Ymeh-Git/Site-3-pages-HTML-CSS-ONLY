@@ -35,4 +35,8 @@
     .card-title{
         z-index: 2;
     }
+
+    iframe{
+        width: 100%;
+    }
 }
