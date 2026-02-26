@@ -13,7 +13,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 500;
     /* confirmed accessibility with #34462e */
     color: #fff;
     font-family: "Libre Baskerville", serif;
@@ -227,8 +228,7 @@ html:has(.overlay:target){
     width: 100%;
     padding: 50px;
 
-    background-color: #fffeea;
-    color: black;
+    background-color: #242424;
 
     position: relative;
     overflow: auto;
@@ -239,19 +239,11 @@ html:has(.overlay:target){
     align-items: center;
 }
 
-.modal p{
-    color: black;
-}
 
 .modal h2{
     width: 90%;
     text-align: center;
-    color: black;
     font-size: 2em;
-}
-
-.modal h3{
-    color: black;
 }
 
 .modal .close{
@@ -263,7 +255,6 @@ html:has(.overlay:target){
     border-radius: 20px;
     text-decoration: none;
     transition: all 200ms;
-    color: black;
     transition: 1s all ease;
 }
 
@@ -308,6 +299,7 @@ html:has(.overlay:target){
     justify-content: center;
     align-items: center;
 
+    background-color: #fff;
     border-radius: 50%;
 }
 
@@ -320,9 +312,6 @@ html:has(.overlay:target){
     padding: 20px;
 }
 
-.modal-content form label{
-    color: black;
-}
 
 .modal-content form:has(:not(.input-check:checked)) .btn-next{
     display: none;
@@ -345,7 +334,7 @@ html:has(.overlay:target){
     border-radius: 15px;
     border: 2px solid transparent;
 
-    background: linear-gradient(145deg,#A02C2C 30%, #ffaf1b 50% , #fff42a 70%);
+    background: linear-gradient(145deg,#A02C2C 30%, #ffaf1b 50% , #A02C2C 70%);
     background-size: 300% 300%;
     background-position: 5% 50%;
     transition: all 0.2s ease-out; 
@@ -353,8 +342,7 @@ html:has(.overlay:target){
 
 .btn-close:hover, .btn-close:focus{
     background-position: 95% 50%;
-    color: #000;
-    border-color: #000;
+    border-color: #fff;
 }
 
 .btn-field{
