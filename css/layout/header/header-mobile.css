@@ -21,11 +21,17 @@
         height: 100vh;
         width: 100vw;
     }
-
-    .header-name-logo:has(#burger-menu-input:checked) .burger-label{
-        text-shadow: 0 0 10px #fff;
+    
+    html:has(#burger-menu-input:checked){
+        overflow-y: hidden;
+        scroll-behavior: auto;
     }
     
+    header:has(#burger-menu-input:checked) .burger-label{
+        text-shadow: 0 0 10px #fff;
+    }
+
+
     .header-nav .burger-menu-items{
         display: none;
     }
